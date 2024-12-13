@@ -1,0 +1,416 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    /* Light Gray-Blue Background */
+    color: #333;
+    /* Dark text */
+}
+
+/* Header styling */
+header {
+    background-color: #003580;
+    /* ShahMart Blue */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #ffcc00;
+    /* ShahMart Yellow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    /* ShahMart Yellow Hover */
+    color: #003580;
+    /* Blue Text */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e8f0fa;
+    /* Light Blue */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #003580;
+    /* ShahMart Blue */
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.hero button {
+    background-color: #ffcc00;
+    /* ShahMart Yellow */
+    color: #003580;
+    /* Blue Text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e6b800;
+    /* Darker Yellow */
+}
+
+/* Categories Section */
+.categories a {
+    text-decoration: none;
+}
+
+.categories {
+    padding: 30px 20px;
+    background-color: #f7f9fc;
+}
+
+.categories h2 {
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003580;
+    /* ShahMart Blue */
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.category h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Products Section */
+.products {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003580;
+    /* ShahMart Blue */
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 300;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #003580;
+    /* ShahMart Blue for price */
+}
+
+.product button {
+    background-color: #ffcc00;
+    /* ShahMart Yellow */
+    color: #003580;
+    /* Blue Text */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #e6b800;
+    /* Darker Yellow */
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 30px 20px;
+    background-color: #003580;
+    /* ShahMart Blue */
+    color: white;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review {
+    width: 30%;
+    font-size: 1em;
+    font-style: italic;
+    background-color: white;
+    color: #003580;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.review h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003580;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 30px 20px;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #003580;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletter button {
+    background-color: #003580;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #ffcc00;
+    color: #003580;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for responsiveness */
+
+/* Small devices (phones, tablets in portrait mode) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .categories h2,
+    .products h2,
+    .reviews h2,
+    .newsletter h2 {
+        font-size: 1.8em;
+    }
+
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+        /* Make products take full width */
+        margin-bottom: 20px;
+    }
+
+    .review {
+        width: 90%;
+        /* Make reviews take full width */
+        margin-bottom: 20px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 90%;
+    }
+}
+
+/* Extra small devices (mobile phones in portrait mode) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .categories h2,
+    .products h2,
+    .reviews h2,
+    .newsletter h2 {
+        font-size: 1.6em;
+    }
+
+    .category img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
