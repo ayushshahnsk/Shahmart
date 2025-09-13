@@ -1,3 +1,3 @@
 # shahmart.github.io
 
-# Shop Online Using ShahMart
+# Shop Online Using ShahMart and Rate
